@@ -1,5 +1,6 @@
 import Refresh from "../assets/refresh.svg?react";
 import Search from "../assets/search.svg?react";
+import '../styles/serversTable.css';
 
 function ServersTable() {
     return (

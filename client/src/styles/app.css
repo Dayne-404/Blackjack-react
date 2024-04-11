@@ -6,6 +6,8 @@
     --dark-extra-color: #282828;
     --green-color: #41c94c;
     --darker-green-color: #38a841;
+    --felt-green-color: #1E5C3A;
+    --wooden-brown-color: #622A0F;
     --blue-color: #3283d5;
     --orange-color: #d2832d;  
     --shy-text-color: #5a5c5a;
@@ -75,71 +77,6 @@ button {
     background-color: var(--darker-green-color);
 }
 
-input {
-    background-color: var(--dark-extra-color);
-    color: white;
-    border: none;
-    height: 2.5rem;
-    width: 100%;
-}
-
-input::placeholder {
-    color: var(--shy-text-color);
-}
-
-input:focus, .search-btn:focus, .search-btn:focus .search-icon {
-    outline: solid var(--darker-green-color);
-    fill: white;
-}
-
-.search-btn:hover, .search-btn:focus, .search-btn:hover .search-icon {
-    background-color: var(--green-color);
-    fill: white;
-}
-
-.search-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.search-input-container {
-    background: var(--dark-extra-color);
-    width: 50%;
-    max-width: 30rem;
-    gap: 0.3rem;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.search-btn {
-    width: 2.5rem;
-    cursor: pointer;
-}
-
-.refresh-btn {
-    width: 2rem;
-    cursor: pointer;
-    position: absolute;
-}
-
-.refresh-icon {
-    fill: var(--shy-text-color);
-    height: 100%;
-    width: 100%;
-}
-
-.search-icon {
-    fill: var(--green-color);
-    height: 100%;
-    width: 100%;
-}
-
-.server-table-buttons {
-    display: flex;
-    gap: 1rem;
-}
-
 .logo {
     fill: white;
     height: 3rem;
@@ -150,7 +87,6 @@ input:focus, .search-btn:focus, .search-btn:focus .search-icon {
     padding: 1rem;
     background: var(--dark-foreground-color);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-
 }
 
 .nav-container {
@@ -188,41 +124,4 @@ input:focus, .search-btn:focus, .search-btn:focus .search-icon {
 }
 
 /* Server */
-
-.servers-table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-    user-select: none;
-    font-size: 1.2rem;
-    max-height: 15rem;
-    overflow-y: auto;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
-}
-
-.servers-table td, 
-.servers-table th {
-    padding: 0.5rem;
-}
-
-.servers-table td {
-    cursor: pointer;
-    border-bottom: 0.1rem solid var(--dark-extra-color);
-}
-
-.servers-table th {
-    font-weight: bold;
-    cursor: default;
-    font-size: 1.3rem;
-    background-color: var(--dark-extra-color);
-}
-
-.servers-table tr:hover {
-    background-color: var(--dark-extra-color);
-}
-
-.servers-title {
-    font-size: 1.875rem;
-}
-
 
