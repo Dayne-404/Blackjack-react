@@ -4,12 +4,12 @@ import "./styles/app.css";
 
 function App() {
 	return (
-		<>
+		<div>
 			<Navbar />
 			<main>
 				<Menu />
 			</main>
-		</>
+		</div>
 	);
 }
 
