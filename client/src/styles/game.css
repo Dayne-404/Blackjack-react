@@ -3,8 +3,32 @@
     box-sizing: border-box;
     width: 100%;
     height: 50rem;
+    padding: 1.5rem 1rem;
 
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    box-shadow: inset 0 0 0.5rem var(--dark-background-color);
+    z-index: 0;
+
+    user-select: none;
+    cursor: normal;
+}
+
+.table-text {
+    font-size: 400%;
+    top: 50%;
+    color: transparent;
+    text-shadow: 2px 2px 3px #184a2e;
+}
+
+.game-players-container {
+    width: auto;
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 3rem;
 }
 
 .table-name {
@@ -14,8 +38,8 @@
 }
 
 .game-board, .table-name {
-    border: 0.5rem solid var(--wooden-brown-color);
-    border-radius: 0.5rem;
+    border: 1rem solid var(--wooden-brown-color);
+    border-radius: 20rem;
 }
 
 .player-photo {
@@ -28,6 +52,8 @@
     display: inline-flex;
     flex-direction: column;
     gap: 0.5rem;
+    
+    width: 12rem;
     background-color: lightblue;
 }
 
@@ -43,22 +69,21 @@
     border-radius: 0.2rem;
 }
 
-/* .card-wrapper {
-    position: absolute;
-} */
-
 .card-wrapper svg {
     width: 3rem;
-    height: auto;
+    height: 5rem;
+    z-index: 2;
 }
 
 .negative-margins {
     margin-right: -1rem;
     margin-left: -1rem;
+    /* transition: margin 0.3s ease-in-out; */
 }
 
 .no-margins {
     margin: 0;
+    /* transition: margin 0.3s ease-in-out; */
 }
 
 .no-gap {
@@ -69,12 +94,14 @@
     gap: 0.2rem;
 }
 
+.small-bottom-margin {
+    margin-bottom: 5rem;
+}
+
 .player-cards-container {
-    width: 10rem;
     height: 5rem;
-    background-color: red;
-    overflow: hidden;
+    
     display: flex;
     justify-content: center;
-    align-items: center;
+    background-color: red;
 }
