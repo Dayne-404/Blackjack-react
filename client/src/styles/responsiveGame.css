@@ -1,0 +1,116 @@
+/* Game-Board */
+
+.game-board {
+    position: absolute;
+    min-width: 30rem;
+    min-height: 20rem;
+    
+    width: 80%;
+    height: 95%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background: var(--felt-green-color);
+    box-sizing: border-box;
+    border: 0.5rem solid var(--wooden-brown-color);
+    border-radius: 2rem;
+    box-shadow: inset 0 0 0.5rem var(--dark-background-color);
+    padding: 1rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.players-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Player-Card */
+
+.player-card-container {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: lightcoral;
+
+    text-align: center;
+    height: 10rem;
+}
+
+.player-card-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.player-photo {
+    width: 5rem;
+    border-radius: 100%;
+    height: auto;
+}
+
+/* Player-Info */
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Player-Hand */
+
+.player-hand-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-hand-total {
+    padding: 0.1rem 0;
+    height: auto;
+}
+
+.cards-container {
+    flex: 1; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    min-height: 0; 
+    max-height: 100%;
+    padding:  0 1.7rem; 
+}
+
+/* Card */
+
+.card {
+    flex: 0 0 auto; 
+    width: auto;
+    height: 90%; 
+    max-height: 100%;
+}
+
+.card svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Helper */
+
+.blue-border {
+    border: 0.2rem dotted blue;
+}
+
+.red-border {
+    background-color: lightblue;
+}
+
+/* Dealer */
+
+
+.no-margin { margin: 0; }
+.negative-margin { margin: 0 -1.7rem; }

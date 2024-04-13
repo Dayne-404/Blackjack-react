@@ -15,9 +15,11 @@ function LargePlayerCard({playerName, total, bet, icon, className} : PlayerProps
         icon = emptyProfilePicture;
     
     return(
-        <div className={"large-player-card-container " + className}>
-            <div className="player-hand-total"><p>{total}</p></div>
-            <Hand name={playerName} />
+        <div className={"player-card-container " + className}>
+            <div className='player-hand-container'>
+                <Hand name={playerName} />
+                <div className="player-hand-total"><p>{total}</p></div>
+            </div>
             <div className="player-info">
                 <img className="player-photo" src={icon} alt={playerName + " photo"} />
                 <h3>{playerName}</h3>

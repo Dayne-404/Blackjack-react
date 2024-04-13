@@ -17,7 +17,7 @@ function Hand({name} : HandProps) {
 
     return(
         <>
-        <motion.div layout className={(largeHand ? "no-gap" : "small-gap") + " player-cards-container"}>
+        <motion.div layout className={(largeHand ? "no-gap" : "small-gap") + " cards-container red-border"}>
             {Cards.map((card, index) => (
                 <motion.div 
                     animate={{x: 0, scale: 1}} 
@@ -25,12 +25,12 @@ function Hand({name} : HandProps) {
                     transition={{duration: 0.3}} 
                     key={`${name}-card-${index}`}
                     layoutId={`${name}-card-${index}`} 
-                    className={(largeHand ? "negative-margins" : "no-margins") + " card-wrapper"}>    
+                    className={(largeHand ? "negative-margin" : "no-margin") + " card"}>    
                     {card}
                 </motion.div>
             ))}
         </motion.div>
-        <button onClick={addCard}>Add Card</button>  {/* TEMP BUTTON */}
+        <button onClick={addCard}>Add Card</button>
         </>
     );
 }

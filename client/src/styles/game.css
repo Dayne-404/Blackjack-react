@@ -24,11 +24,22 @@
     text-shadow: 2px 2px 3px #184a2e;
 }
 
-.game-players-container {
+/* BIG */
+
+/* .game-players-container {
     width: auto;
     display: inline-flex;
     align-items: flex-end;
     gap: 3rem;
+} */
+
+/* SMALL */
+
+.game-players-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
 }
 
 .table-name {
@@ -47,7 +58,9 @@
     border-radius: 100%;
 }
 
-.large-player-card-container {
+/* BIG */
+
+/* .large-player-card-container {
     text-align: center;
     display: inline-flex;
     flex-direction: column;
@@ -55,7 +68,19 @@
     
     width: 12rem;
     background-color: lightblue;
+} */
+
+/* SMALL */
+
+.large-player-card-container {
+    background-color: lightblue;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
+
 
 .large-player-card-container p {
     margin: 0 0 0.2rem 0;
@@ -98,10 +123,16 @@
     margin-bottom: 5rem;
 }
 
+
+/* BIG */
 .player-cards-container {
     height: 5rem;
     
     display: flex;
     justify-content: center;
     background-color: red;
+}
+
+.player-hand-wrapper {
+    width: 100%;
 }
