@@ -17,7 +17,7 @@ function Hand({name} : HandProps) {
 
     return(
         <>
-        <motion.div layout className={(largeHand ? "no-gap" : "small-gap") + " cards-container red-border"}>
+        <motion.div layout className={(largeHand ? "card-padding" : "no-padding") + " cards-container red-border"}>
             {Cards.map((card, index) => (
                 <motion.div 
                     animate={{x: 0, scale: 1}} 
