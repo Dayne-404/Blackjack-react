@@ -7,17 +7,22 @@ interface PlayerProps {
     total: number,
     bet: number,
     icon?: string, //Probably going to get more complex later...
-    className?: string;
+    className?: string,
+    hands: string[][];
 }
 
-function LargePlayerCard({playerName, total, bet, icon, className} : PlayerProps) {
+function PlayerCard({playerName, total, bet, icon, hands, className} : PlayerProps) {
     if(!icon)
         icon = emptyProfilePicture;
     
+    
+
     return(
         <div className={"player-card-container " + className}>
             <div className='player-hand-container'>
-                <Hand name={playerName} />
+                {hands.map((hand, index) => (
+                    <Hand name={playerName+'-hand-'+index} hand={hand} />
+                ))}
                 <div className="player-hand-total"><p>{total}</p></div>
             </div>
             <div className="player-info">
@@ -29,4 +34,4 @@ function LargePlayerCard({playerName, total, bet, icon, className} : PlayerProps
     );
 }
 
-export default LargePlayerCard;
+export default PlayerCard;

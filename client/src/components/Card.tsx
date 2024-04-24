@@ -28,13 +28,12 @@ const cardsDict: { [key: string]: React.ComponentType } = {
     'KD': kingDiamonds
 }
 interface CardProps {
-    value: string
-    suit: string
+    cardString: string
     style?: React.CSSProperties;
 }
 
-function Card({value, suit}: CardProps) {
-    const CardComponent = cardsDict[value + suit];
+function Card({cardString}: CardProps) {
+    const CardComponent = cardsDict[cardString];
     
     if(!CardComponent)
         return;

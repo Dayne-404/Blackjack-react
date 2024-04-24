@@ -6,10 +6,7 @@
     
     width: 100%;
     height: 95%;
-    left: 0;
-    right: 0;
 
-    
     background: var(--felt-green-color);
     box-sizing: border-box;
     border: 0.5rem solid var(--wooden-brown-color);
@@ -19,9 +16,11 @@
     overflow: hidden;
 
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     flex-direction: column;
     justify-content: space-between;
+
+    margin-bottom: 4rem;
 }
 
 .table-container {
@@ -38,6 +37,12 @@
     margin-bottom: -0.5px;
 }
 
+.table-text {
+    font-size: 2rem;
+    color: transparent;
+    text-shadow: 1px 1px 0.2px rgba(0, 0, 0, 0.3);
+}
+
 .players-container {
     display: flex;
     flex-direction: column;
@@ -50,11 +55,14 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    position: absolute;
+    position: fixed;
 
     left: 0;
     right: 0;
     bottom: 0;
+
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: rgba(50, 50, 50, 0.3);
 }
 
 .game-btn {
@@ -78,7 +86,7 @@
 
     gap: 0.3rem;
     text-align: center;
-    height: 10rem;
+    min-height: 7.5rem;
 }
 
 .player-card-container p {
@@ -106,8 +114,6 @@
 
 .player-hand-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .player-hand-total {
@@ -119,19 +125,19 @@
     margin: 0 auto;
 }
 
-.cards-container {
+.hand-container {
     flex: 1; 
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
     align-items: center; 
-    max-width: 100%;
-    min-height: 7.5rem; 
-    max-height: 100%;
+    height: 7.5rem;
 
     box-sizing: border-box;
     border: 0.3rem solid rgba(211, 211, 211, 0.2);
     border-radius: 0.5rem;
+
+    padding: 0.2rem 0;
 }
 
 /* Card */
@@ -139,7 +145,7 @@
 .card {
     flex: 0 0 auto; 
     width: auto;
-    height: 90%; 
+    height: 6.25rem; 
     max-height: 100%;
 }
 
