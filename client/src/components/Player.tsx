@@ -22,7 +22,7 @@ function LargePlayerCard({playerName, total, bet, icon, className} : PlayerProps
             </div>
             <div className="player-info">
                 <img className="player-photo" src={icon} alt={playerName + " photo"} />
-                <h3>{playerName}</h3>
+                <h3 className='player-name'>{playerName}</h3>
                 <p>{bet}</p>
             </div>
         </div>
